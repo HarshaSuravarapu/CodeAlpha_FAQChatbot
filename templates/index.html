@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAQ Chatbot</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        .container {
+            width: 50%;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        input[type=text] {
+            width: 70%;
+            padding: 10px;
+        }
+
+        input[type=submit] {
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+        }
+
+        .response {
+            margin-top: 20px;
+            font-size: 20px;
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>AI FAQ Chatbot</h1>
+
+    <form method="POST">
+        <input type="text" name="user_input" placeholder="Ask a question..." required>
+
+        <input type="submit" value="Ask">
+    </form>
+
+    <div class="response">
+        {{ response }}
+    </div>
+</div>
+
+</body>
+</html>
